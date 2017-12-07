@@ -24,7 +24,15 @@ let config = {
       },
       plugins: [
         new ExtractTextWebpackPlugin("styles.css")
-      ]
+      ],
+      devServer: {
+        contentBase: path.resolve(__dirname, "./public"),
+        historyApiFallback: true,
+        inline: true,
+        open: true,
+        hot: true
+      },
+      devtool: "eval-source-map"
   }
   
   module.exports = config;
