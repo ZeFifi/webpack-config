@@ -70,9 +70,17 @@
 "use strict";
 
 
+__webpack_require__(1);
+
 document.write("Je débute avec Webpack !");
 
 var a = "J'apprends Webpack !";
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
